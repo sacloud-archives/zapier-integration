@@ -28,7 +28,7 @@ module.exports = {
         choices: Fields.zoneChoices,
         required: true,
         list: false,
-        altersDynamicFields: true,
+        altersDynamicFields: false,
       },
     ],
     outputFields: [],
