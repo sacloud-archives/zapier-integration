@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "jest --testTimeout 10000",
-    "format": "prettier --write *.js test/*.js"
+    "format": "prettier --write *.js test/*.js triggers/*.js"
   },
   "dependencies": {
     "zapier-platform-core": "11.1.1"
