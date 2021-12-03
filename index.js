@@ -3,6 +3,7 @@ const {
   befores = [],
   afters = [],
 } = require("./authentication");
+const newServerTrigger = require("./triggers/new_server.js");
 
 module.exports = {
   // This is just shorthand to reference the installed dependencies you have.
@@ -17,7 +18,7 @@ module.exports = {
   afterResponse: [...afters],
 
   // If you want your trigger to show up, you better include it here!
-  triggers: {},
+  triggers: { [newServerTrigger.key]: newServerTrigger },
 
   // If you want your searches to show up, you better include it here!
   searches: {},
